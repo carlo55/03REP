@@ -2,9 +2,42 @@
 <html>
 <head>
     <title>FUNZIONA!!</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tre Pulsanti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            height: 30vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ccc;
+        }
 </head>
 <body>
     <h1>Ciao!</h1>
     <p>Sembra funzionare..</p>
+        <div class="button-container">
+        <button class="button" onclick="alert('Hai cliccato il primo pulsante!')">INGRESSO</button>
+        <button class="button" onclick="alert('Hai cliccato il secondo pulsante!')">USCITA</button>
+        <button class="button" onclick="alert('Hai cliccato il terzo pulsante!')">BACHECA</button>
+    </div>
 </body>
 </html>
